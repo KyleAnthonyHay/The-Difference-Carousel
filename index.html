@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Carousel Test</title>
+  </head>
+  <body>
+
+    <style>
+    .carousel-item {
+        height: 25rem;
+        position: relative;
+    }
+    .container {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        padding-bottom: 50px;
+    }
+        .card-1 {
+        display: flex;
+        align-items: center;
+    }
+    .card-1 img {
+        width: 100%;
+        max-width: 300px; /* Adjust as needed */
+    }
+    .card-1 .text-content {
+        padding-left: 20px; /* Adds space between the image and the text */
+    }
+    .row .col-md-4 {
+        padding: 15px; /* Adds space between the cards */
+    }
+    .carousel-indicators li {
+        background-color: #555; /* Darker color for inactive indicators */
+    }
+    .carousel-indicators .active {
+        background-color: #000; /* Black color for the active indicator */
+    }
+    .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    /* Vector */
+    .text-content > img {
+    width: 20px; /* Adjust as needed */
+    height: auto; /* This will maintain the aspect ratio */
+    padding-bottom: 15px;
+    }
+    .text-content > p {
+        font-size: 14px;
+    }
+    .text-content > h6 {
+        font-size: 15px;
+        font-family: Roboto; 
+    }
+    </style>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class = "carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <!-- Carousel item 1 -->
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row">
+                        <!-- Content for slide 1 -->
+                        <div class="col-md-4 card-1">
+                            <img src="./assets/Rectangle14.jpg" alt="">
+                            <div class="text-content">
+                                <img src="./assets/Vector.png" alt="">
+                                <p>“ I built the Difference out of dissatisfaction with the marketplace. I lost 60 pounds over two months using the Difference.”</p>
+                                <h6>Peter, Founder & CEO</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 card-1">
+                            <img src="./assets/Rectangle16.jpg" alt="">
+                            <div class="text-content">
+                                <img src="./assets/Vector.png" alt="">
+                                <p>“ I built the Difference out of dissatisfaction with the marketplace. I lost 60 pounds over two months using the Difference.”</p>
+                                <h6>Peter, Founder & CEO</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 card-1">
+                            <img src="./assets/Rectangle18.jpg" alt="">
+                            <div class="text-content">
+                                <img src="./assets/Vector.png" alt="">
+                                <p>“ I built the Difference out of dissatisfaction with the marketplace. I lost 60 pounds over two months using the Difference.”</p>
+                                <h6>Peter, Founder & CEO</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel item 2 -->
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row">
+                        <!-- Content for slide 1 -->
+                        <div class="col-md-4 card-1">
+                            <img src="./assets/Rectangle14.jpg" alt="">
+                            <div class="text-content">
+                                <p>“I  the Difference out of dissatisfaction with the marketplace. I lost 60 pounds over two months using the Difference.”</p>
+                                <h6>Peter, Founder & CEO</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 card-1">
+                            <img src="./assets/Rectangle16.jpg" alt="">
+                            <div class="text-content">
+                                <p>“ I built the Difference out of dissatisfaction with the marketplace. I lost 60 pounds over two months using the Difference.”</p>
+                                <h6>Peter, Founder & CEO</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-4 card-1">
+                            <img src="./assets/Rectangle18.jpg" alt="">
+                            <div class="text-content">
+                                <p>“ I built the Difference out of dissatisfaction with the marketplace. I lost 60 pounds over two months using the Difference.”</p>
+                                <h6>Peter, Founder & CEO</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
